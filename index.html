@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>M&K【脱毛＆アイブロウ】公式サイト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="長野県の眉毛・まつ毛・脱毛サロン M&K の公式サイトです。アイブロウ、アイラッシュ、脱毛ならお任せください。" />
+  <style>
+    :root {
+      --main-color: #c79fb8;
+      --accent-color: #8b5c7e;
+      --bg-light: #fdf7fb;
+      --text-main: #333;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      color: var(--text-main);
+      background: #fff;
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    header {
+      background: linear-gradient(135deg, var(--main-color), var(--accent-color));
+      color: #fff;
+      padding: 16px 20px 80px;
+    }
+    .header-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .logo-area {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+    .logo-sub {
+      font-size: 11px;
+      opacity: .8;
+      margin-top: 4px;
+    }
+    nav {
+      display: none;
+    }
+    .hero {
+      max-width: 1080px;
+      margin: 0 auto;
+      margin-top: 32px;
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 20px;
+      align-items: center;
+    }
+    .hero-copy-main {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .hero-copy-sub {
+      font-size: 14px;
+      opacity: .9;
+      margin-bottom: 20px;
+    }
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 13px;
+      border: 1px solid #fff;
+      cursor: pointer;
+      transition: opacity .2s, transform .1s;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: #fff;
+      color: var(--accent-color);
+      font-weight: 600;
+      border: none;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+    }
+    .btn:hover { opacity: .9; transform: translateY(1px); }
+
+    .hero-image {
+      background: rgba(255,255,255,.16);
+      border-radius: 20px;
+      padding: 18px;
+      text-align: center;
+      font-size: 12px;
+    }
+    .hero-image-box {
+      background: #fff;
+      border-radius: 16px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: #888;
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 24px 16px 60px;
+      background: #fff;
+    }
+
+    .section {
+      padding: 40px 0 24px;
+      border-bottom: 1px solid #eee;
+    }
+    .section:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: inline-block;
+      border-left: 4px solid var(--accent-color);
+      padding-left: 10px;
+    }
+    .section-lead {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 18px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+    .card {
+      background: var(--bg-light);
+      border-radius: 16px;
+      padding: 16px;
+      font-size: 13px;
+    }
+    .card-title {
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: #fff;
+      border: 1px solid #eee;
+      margin-right: 4px;
+      margin-bottom: 4px;
+    }
+    ul.clean {
+      list-style: none;
+      font-size: 13px;
+    }
+    ul.clean li {
+      padding: 4px 0;
+    }
+
+    .menu-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 6px;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 6px;
+      font-size: 13px;
+      padding: 8px 10px;
+      background: #fff;
+      border-radius: 12px;
+    }
+    .menu-name {
+      font-weight: 500;
+    }
+    .menu-note {
+      font-size: 11px;
+      color: #777;
+      margin-top: 2px;
+    }
+    .menu-price {
+      white-space: nowrap;
+      font-weight: 600;
+    }
+
+    .staff-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .staff-item {
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+      border-radius: 14px;
+      background: #fff;
+      align-items: flex-start;
+    }
+    .staff-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--bg-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      color: #888;
+    }
+    .staff-name {
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .staff-role {
+      font-size: 11px;
+      color: #777;
+      margin-bottom: 4px;
+    }
+    .staff-comment {
+      font-size: 12px;
+    }
+
+    .two-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .table-like {
+      font-size: 13px;
+    }
+    .table-row {
+      display: flex;
+      gap: 10px;
+      padding: 4px 0;
+    }
+    .table-label {
+      width: 80px;
+      font-weight: 600;
+    }
+    .table-value {
+      flex: 1;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      color: #888;
+      padding: 20px 10px 30px;
+      background: #fafafa;
+      border-top: 1px solid #eee;
+      margin-top: 20px;
+    }
+
+    /* スマホ表示 */
+    @media (max-width: 768px) {
+      header { padding: 12px 14px 60px; }
+      .header-inner { flex-direction: column; align-items: flex-start; }
+      .hero {
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+      }
+      nav {
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+      }
+      .nav-scroll {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding-bottom: 6px;
+        scrollbar-width: none;
+      }
+      .nav-scroll::-webkit-scrollbar { display: none; }
+      .nav-link {
+        font-size: 11px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(255,255,255,.7);
+        white-space: nowrap;
+        background: rgba(255,255,255,.08);
+      }
+      main { padding: 20px 14px 40px; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .hero-image { order: -1; }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+<header id="top">
+  <div class="header-inner">
+    <div class="logo-area">
+      M&K【脱毛＆アイブロウ】
+      <div class="logo-sub">Nagano / Eyebrow & Eyelash & Depilation salon</div>
+    </div>
+    <div style="text-align:right; font-size:11px;">
+      <div>上田・佐久エリア／完全予約制</div>
+      <div>営業時間 9:00–18:00</div>
+    </div>
+  </div>
+
+  <!-- スマホ用 横スクロールナビ -->
+  <nav>
+    <div class="nav-scroll">
+      <a href="#about" class="nav-link">サロン紹介</a>
+      <a href="#menu" class="nav-link">メニュー一覧</a>
+      <a href="#staff" class="nav-link">スタッフ紹介</a>
+      <a href="#reserve" class="nav-link">予約</a>
+      <a href="#monitor" class="nav-link">モニター募集</a>
+      <a href="#recruit" class="nav-link">求人</a>
+      <a href="#access" class="nav-link">アクセス</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div>
+      <p class="hero-copy-main">
+        「昨日よりもっと、今日の自分が好きになる眉とまつ毛を。」
+      </p>
+      <p class="hero-copy-sub">
+        M&Kは、長野にいながら都会クオリティのアイブロウ・アイラッシュ・脱毛が受けられるトータルビューティーサロンです。
+        一人ひとりの「なりたい」を、丁寧なカウンセリングと高い技術で形にします。
+      </p>
+      <div class="hero-buttons">
+        <!-- ★ここにホットペッパーのURLを入れてください -->
+        <a href="#" class="btn btn-primary">ホットペッパーから予約する</a>
+        <!-- ★ここにLINE公式アカウントのURLを入れてください -->
+        <a href="#" class="btn btn-outline">LINEで問い合わせる</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-image-box">
+        サロン写真（店内・施術風景など）の<br>コラージュ画像をここに入れると雰囲気◎
+      </div>
+      <p style="margin-top:8px; font-size:11px; opacity:.8;">
+        ※ 画像は後から差し替えてください（現在はダミーエリアです）
+      </p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- サロン紹介 -->
+  <section id="about" class="section">
+    <h2 class="section-title">サロン紹介</h2>
+    <p class="section-lead">
+      長野県・上田／佐久エリアで、アイブロウ・アイラッシュ・脱毛をトータルでお任せいただけるサロンです。
+      アットホームな雰囲気の中で、最先端の技術を気軽に体験していただけます。
+    </p>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">M&Kが大切にしていること</div>
+        <p>
+          ・一人ひとりのライフスタイルに合わせたデザイン提案<br>
+          ・「また来たい」と思える居心地のよさ<br>
+          ・友達や家族に紹介したくなる仕上がりと体験
+        </p>
+        <div style="margin-top:10px;">
+          <span class="tag">アイブロウ</span>
+          <span class="tag">アイラッシュ</span>
+          <span class="tag">ワックス脱毛</span>
+          <span class="tag">メンズOK（※店舗により異なる）</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">店舗情報</div>
+        <div class="table-like">
+          <div class="table-row">
+            <div class="table-label">店舗</div>
+            <div class="table-value">
+              M&K【脱毛＆アイブロウ】上田店／佐久店<br>
+              ※店舗名や住所は後から修正してください
+            </div>
+          </div>
+          <div class="table-row">
+            <div class="table-label">営業時間</div>
+            <div class="table-value">9:00〜18:00（最終受付メニューにより異なります）</div>
+          </div>
+          <div class="table-row">
+            <div class="table-label">定休日</div>
+            <div class="table-value">不定休</div>
+          </div>
+          <div class="table-row">
+            <div class="table-label">お支払い</div>
+            <div class="table-value">現金／クレジットカード／電子マネー（※対応ブランドは店舗により異なります）</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- メニュー一覧 -->
+  <section id="menu" class="section">
+    <h2 class="section-title">メニュー一覧</h2>
+    <p class="section-lead">
+      こちらは一例です。実際の料金・メニュー名に合わせて編集してください。
+    </p>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">アイブロウ</div>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div>
+              <div class="menu-name">美眉スタイリング（WAX脱毛込み）</div>
+              <div class="menu-note">骨格に合わせた眉デザイン＋WAXで産毛までスッキリ。</div>
+            </div>
+            <div class="menu-price">¥6,000〜</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-name">眉癖改善＋アイブロウWAX</div>
+              <div class="menu-note">ハリウッドブロウリフト系のメニューがある場合はこちらに。</div>
+            </div>
+            <div class="menu-price">¥7,000〜</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">まつ毛・脱毛</div>
+        <div class="menu-list">
+          <div class="menu-item">
+            <div>
+              <div class="menu-name">まつ毛パーマ（ラッシュリフト）</div>
+              <div class="menu-note">根元から立ち上げて、ビューラーいらずの目元に。</div>
+            </div>
+            <div class="menu-price">¥6,000〜</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-name">VIOワックス脱毛</div>
+              <div class="menu-note">デリケートゾーンのケアを丁寧に行う人気メニュー。</div>
+            </div>
+            <div class="menu-price">¥8,000〜</div>
+          </div>
+          <div class="menu-item">
+            <div>
+              <div class="menu-name">うなじWAX脱毛</div>
+              <div class="menu-note">まとめ髪・アップスタイルが映える美しいうなじに。</div>
+            </div>
+            <div class="menu-price">¥4,000〜</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:11px; color:#777; margin-top:8px;">
+      ※料金・メニュー内容は店舗・時期により異なります。最新情報はホットペッパーまたは公式LINEよりご確認ください。
+    </p>
+  </section>
+
+  <!-- スタッフ紹介 -->
+  <section id="staff" class="section">
+    <h2 class="section-title">スタッフ紹介</h2>
+    <p class="section-lead">
+      M&Kでは、美容が大好きで、仕事の時間を楽しんでいるスタッフがお迎えします。
+      こちらのコメントは、実際のスタッフに合わせて書き換えてください。
+    </p>
+    <div class="staff-list">
+      <div class="staff-item">
+        <div class="staff-icon">STAFF</div>
+        <div>
+          <div class="staff-name">Koa（コア）</div>
+          <div class="staff-role">代表／アイブロウデザイナー</div>
+          <div class="staff-comment">
+            眉毛ひとつで雰囲気はガラッと変わります。<br>
+            「自分の顔が前より好きになった」と思ってもらえるようなデザインをご提案します。
+          </div>
+        </div>
+      </div>
+      <div class="staff-item">
+        <div class="staff-icon">STAFF</div>
+        <div>
+          <div class="staff-name">Maho（マホ）</div>
+          <div class="staff-role">アイラッシュ／脱毛担当</div>
+          <div class="staff-comment">
+            初めての方でも安心して通っていただけるように、分かりやすい説明と丁寧な施術を心がけています。<br>
+            なんでも気軽にご相談ください。
+          </div>
+        </div>
+      </div>
+      <!-- 他のスタッフも同じ形で追加できます -->
+    </div>
+  </section>
+
+  <!-- 予約 -->
+  <section id="reserve" class="section">
+    <h2 class="section-title">ご予約について</h2>
+    <p class="section-lead">
+      ご予約は、ホットペッパービューティーまたは公式LINEから承っております。
+      空き状況のご確認や、メニューのご相談のみでもお気軽にご連絡ください。
+    </p>
+    <div class="card">
+      <div class="two-buttons">
+        <!-- ★ホットペッパーのURL -->
+        <a href="#" class="btn btn-primary">ホットペッパーから予約</a>
+        <!-- ★LINEのURL -->
+        <a href="#" class="btn btn-outline">LINEで予約・相談</a>
+      </div>
+      <ul class="clean" style="margin-top:12px;">
+        <li>・前日・当日のキャンセルやメニュー変更は、できるだけお早めにご連絡をお願いいたします。</li>
+        <li>・10分以上遅れた場合、メニュー変更や施術時間の短縮をお願いする場合がございます。</li>
+        <li>・お肌の状態や体調によっては、当日施術をお断りすることもございます。ご了承ください。</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- モニター募集 -->
+  <section id="monitor" class="section">
+    <h2 class="section-title">モニター募集</h2>
+    <p class="section-lead">
+      新メニュー導入や、技術習得中スタッフのトレーニングのために、期間限定でモニター様を募集することがございます。
+    </p>
+    <div class="card">
+      <div class="card-title">モニター募集の一例</div>
+      <ul class="clean">
+        <li>・技術習得中スタッフによる施術（先輩スタッフが仕上がりをチェックします）</li>
+        <li>・通常よりお得なモニター価格でご案内</li>
+        <li>・ビフォーアフター写真の撮影にご協力いただく場合があります</li>
+      </ul>
+      <p style="font-size:12px; margin-top:10px;">
+        現在の募集状況は、ホットペッパーまたは公式Instagram・LINEにてお知らせいたします。
+      </p>
+    </div>
+  </section>
+
+  <!-- 求人 -->
+  <section id="recruit" class="section">
+    <h2 class="section-title">求人情報</h2>
+    <p class="section-lead">
+      M&Kでは、美容の仕事を楽しみながら長く続けたい方を募集しています。
+      「友達と一緒に働きたくなるサロン」を目指しています。
+    </p>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">募集職種</div>
+        <ul class="clean">
+          <li>・アイブロウリスト（要美容師免許）</li>
+          <li>・アイラッシュデザイナー（要美容師免許）</li>
+          <li>・脱毛施術スタッフ</li>
+        </ul>
+        <p style="font-size:12px; margin-top:10px;">
+          雇用形態・給与・勤務時間など、詳細は面談時にお伝えします。
+        </p>
+      </div>
+      <div class="card">
+        <div class="card-title">応募・お問い合わせ</div>
+        <p style="font-size:13px;">
+          履歴書（写真付き）をメールまたはLINEでお送りいただくか、<br>
+          まずは「求人について」とメッセージをいただければOKです。
+        </p>
+        <div style="font-size:12px; margin-top:8px;">
+          メール：example@example.com<br>
+          LINE：公式アカウントのトーク画面からご連絡ください。<br>
+          ※実際のメールアドレス・連絡先に書き換えてください。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- アクセス -->
+  <section id="access" class="section">
+    <h2 class="section-title">アクセス</h2>
+    <p class="section-lead">
+      店舗ごとの住所や駐車場のご案内はこちらをご確認ください。
+      Googleマップの埋め込みも可能です。
+    </p>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title">上田店</div>
+        <div class="table-like">
+          <div class="table-row">
+            <div class="table-label">住所</div>
+            <div class="table-value">〒000-0000 長野県上田市〇〇〇〇<br>※実際の住所に書き換えてください</div>
+          </div>
+          <div class="table-row">
+            <div class="table-label">アクセス</div>
+            <div class="table-value">上田駅から車で約〇分／徒歩〇分</div>
+          </div>
+          <div class="table-row">
+            <div class="table-label">駐車場</div>
+            <div class="table-value">店舗前に〇台分あり</div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">佐久店</div>
+        <div class="table-like">
+          <div class="table-row">
+            <div class="table-label">住所</div>
+            <div class="table-value">〒000-0000 長野県佐久市〇〇〇〇</div>
+          </div>
+          <div class="table-row">
+            <div class="table-label">アクセス</div>
+            <div class="table-value">佐久平駅から車で約〇分</div>
+          </div>
+          <div class="table-row">
+            <div class="table-label">駐車場</div>
+            <div class="table-value">共同駐車場あり</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:11px; color:#777; margin-top:10px;">
+      ※Googleマップを埋め込みたい場合は、マップの「地図を埋め込む」から取得したコードをこの下に貼り付けてください。
+    </p>
+  </section>
+</main>
+
+<footer>
+  &copy; M&K【脱毛＆アイブロウ】 All Rights Reserved.
+</footer>
+
+</body>
+</html>
