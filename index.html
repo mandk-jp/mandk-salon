@@ -234,6 +234,33 @@
         </div>
       </div>
     </section>
+    <section id="monitor" class="section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">MONITOR</p>
+      <h2 class="section-title">モニター募集</h2>
+    </div>
+
+    <div class="card-grid">
+      <article class="card">
+        <img src="img/vio_monitor.jpg" alt="VIOワックス脱毛モニター">
+        <h3 class="card-title">VIOワックス脱毛モニター</h3>
+        <p class="card-text">
+          レディース限定モニターメニュー。施術前後のお写真・ご感想にご協力いただける方を募集しています。
+        </p>
+      </article>
+
+      <article class="card">
+        <img src="img/nape_wax.jpg" alt="うなじWAX脱毛">
+        <h3 class="card-title">うなじWAX脱毛</h3>
+        <p class="card-text">
+          着物やアップスタイルが映える、うなじ専用メニュー。新成人限定クーポンもご用意しています。
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
 
     <!-- 求人 -->
     <section id="recruit" class="section section-alt">
@@ -327,6 +354,16 @@
         navToggle.classList.remove("is-open");
       });
     });
-  </script>
+  <script>
+  const nav = document.querySelector(".nav");
+  const toggle = document.querySelector(".nav-toggle");
+
+  if (nav && toggle) {
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+  }
+</script>
+  
 </body>
 </html>
