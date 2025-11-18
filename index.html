@@ -2,164 +2,328 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>M&K｜眉・まつ毛・脱毛サロン</title>
+  <title>M&K｜眉毛・まつ毛・脱毛サロン（上田・佐久）</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="M&Kは長野県佐久市・上田市にある、眉毛・まつ毛・脱毛に特化したサロン。ハリウッドブロウリフトやパラレルブロウ、ラッシュリフト、SHR蓄熱式脱毛で「昨日よりもっと、今日の自分を好きになる」を叶えます。" />
+  <meta name="description" content="長野県上田市・佐久市の眉毛・まつ毛・脱毛サロン M&K。ハリウッドブロウリフト、パラレルブロウ、ラッシュリフト、SHR脱毛で「昨日よりもっと、今日の自分を好きになる」を叶えます。" />
   <!-- フォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <!-- 共通CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<header class="site-header">
-  <div class="container site-header-inner">
-    <div class="logo">
-      <a href="index.html">
-        <span class="logo-main">M&amp;K</span>
-        <span class="logo-sub">EYEBROW / LASH / HAIR REMOVAL</span>
-      </a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="#top">
+          <span class="logo-main">M&amp;K</span>
+          <span class="logo-sub">EYE BROW / LASH / HAIR REMOVAL</span>
+        </a>
+      </div>
+      <button class="nav-toggle" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">サロン紹介</a></li>
+          <li><a href="#menu">メニュー</a></li>
+          <li><a href="#staff">スタッフ</a></li>
+          <li><a href="#reservation">予約</a></li>
+          <li><a href="#monitor">モニター募集</a></li>
+          <li><a href="#recruit">求人</a></li>
+          <li><a href="#access">アクセス</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <button class="nav-toggle" aria-label="メニューを開く">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="nav">
-      <ul>
-        <li><a href="about.html">サロン紹介</a></li>
-        <li><a href="menu.html">メニュー</a></li>
-        <li><a href="staff.html">スタッフ</a></li>
-        <li><a href="reservation.html">予約</a></li>
-        <li><a href="monitor.html">モニター募集</a></li>
-        <li><a href="recruit.html">求人</a></li>
-        <li><a href="access.html">アクセス</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main>
   <!-- ヒーロー -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <p class="eyebrow">EYEBROW / LASH / HAIR REMOVAL SALON</p>
-        <h1>昨日よりもっと、<br class="sp">今日の自分を好きになる。</h1>
-        <p class="lead">
-          眉・まつ毛・脱毛に特化した M&amp;K。<br>
-          ハリウッドブロウリフト、パラレルブロウ、ラッシュリフト、<br class="pc">
-          SHR蓄熱式脱毛で、一人ひとりの「なりたい印象」をデザインします。
-        </p>
-        <div class="hero-buttons">
-          <a href="reservation.html" class="btn primary">WEB予約</a>
-          <a href="menu.html" class="btn ghost">メニューを見る</a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <!-- ここにメインビジュアル写真を入れる（例：img/hero-main.jpg） -->
-        <div class="hero-photo hero-photo-1"></div>
-        <div class="hero-photo hero-photo-2"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- コンセプト -->
-  <section class="section concept">
-    <div class="container">
-      <h2 class="section-title">Concept</h2>
-      <p class="section-lead">
-        M&amp;Kは「毛」に特化したサロン。<br class="sp">
-        眉・まつ毛・脱毛をトータルで整えることで、<br class="pc">
-        毎日のメイク時間を短く、そして自分をもっと好きになれるようなお手伝いをします。
-      </p>
-      <div class="features">
-        <div class="feature-card">
-          <h3>眉毛デザイン</h3>
-          <p>ハリウッドブロウリフト（HBL）やパラレルブロウで、眉癖を整え骨格に合わせたデザインをご提案。女性も男性も、第一印象からアップデート。</p>
-        </div>
-        <div class="feature-card">
-          <h3>まつ毛デザイン</h3>
-          <p>パリジェンヌラッシュリフト・ラッシュリフトなど、目元のバランスに合わせたカールや立ち上がりをご提案。アイメイクいらずの目元へ。</p>
-        </div>
-        <div class="feature-card">
-          <h3>SHR蓄熱式脱毛</h3>
-          <p>痛みを抑えたSHR蓄熱式脱毛で、全身から部分まで幅広く対応。自己処理から解放され、清潔感のある素肌を目指します。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 店舗情報ダイジェスト -->
-  <section class="section stores">
-    <div class="container">
-      <h2 class="section-title">Stores</h2>
-      <div class="store-grid">
-        <article class="store-card">
-          <h3>M&amp;K 佐久店</h3>
-          <p class="store-text">
-            長野県佐久市岩村田2329-1 なんだ館2F<br>
-            佐久平駅 / 岩村田駅から車で6分・駐車場完備
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-label">EYEBROW / LASH / HAIR REMOVAL SALON</p>
+          <h1>
+            昨日よりもっと、<br />
+            今日の自分を好きになる。
+          </h1>
+          <p class="hero-lead">
+            眉・まつ毛・脱毛に特化したサロン M&amp;K。<br />
+            ハリウッドブロウリフト、パラレルブロウ、ラッシュリフト、SHR脱毛で<br />
+            「なりたい印象」をデザインします。
           </p>
-          <div class="store-links">
-            <a href="https://beauty.hotpepper.jp/kr/slnH000628925/" target="_blank" rel="noopener" class="btn small">佐久店Hot Pepper</a>
+          <div class="hero-buttons">
+            <a class="btn primary" href="https://beauty.hotpepper.jp/kr/slnH000628925/" target="_blank" rel="noopener">佐久店 WEB予約</a>
+            <a class="btn outline" href="https://beauty.hotpepper.jp/kr/slnH000709518/" target="_blank" rel="noopener">上田店 WEB予約</a>
           </div>
-        </article>
-
-        <article class="store-card">
-          <h3>M&amp;K 上田店</h3>
-          <p class="store-text">
-            長野県上田市天神1-3-23 天神テナント101<br>
-            上田駅 徒歩4分・駐車場完備
-          </p>
-          <div class="store-links">
-            <a href="https://beauty.hotpepper.jp/kr/slnH000709518/" target="_blank" rel="noopener" class="btn small">上田店Hot Pepper</a>
+        </div>
+        <div class="hero-photo">
+          <!-- ここに後でメイン写真を入れる（imgタグ） -->
+          <div class="photo-placeholder">
+            Photo
+            <span>サロンメインビジュアル</span>
           </div>
-        </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA -->
-  <section class="section cta">
-    <div class="container cta-inner">
-      <div class="cta-text">
-        <h2>初めての方へ</h2>
-        <p>
-          カウンセリングでお悩みを丁寧にヒアリングし、<br class="pc">
-          ライフスタイルや骨格・雰囲気にフィットするデザインをご提案します。<br>
-          眉・まつ毛・脱毛が初めての方も安心してご来店ください。
-        </p>
+    <!-- サロン紹介 -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">About</p>
+          <h2>サロン紹介</h2>
+        </div>
+        <div class="grid two-column">
+          <div>
+            <p class="text-large">
+              M&amp;Kは「毛」に特化した、<br />
+              眉・まつ毛・脱毛のトータルビューティーサロンです。
+            </p>
+            <p>
+              日本初の眉癖改善施術「ハリウッドブロウリフト」や、<br />
+              メンズに特化した「パラレルブロウ」、<br />
+              お目元に合わせたラッシュリフト＆パリジェンヌ、<br />
+              お肌にやさしいSHR蓄熱式脱毛など、<br />
+              一人一人のお悩みに合わせてご提案いたします。
+            </p>
+            <p>
+              毎日のメイク時間を短く、<br />
+              自分の素肌や表情をもっと好きになれるように。<br />
+              そのお手伝いを、M&amp;Kにお任せください。
+            </p>
+          </div>
+          <div class="about-points">
+            <div class="tag">上田店・佐久店</div>
+            <ul>
+              <li>ハリウッドブロウリフト / パラレルブロウ 公認サロン</li>
+              <li>女性・男性どちらも通いやすい落ち着いた空間</li>
+              <li>お顔の骨格・筋肉・パーツを見極めたデザイン提案</li>
+              <li>SHR蓄熱式脱毛で、全身～パーツまで対応</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="cta-buttons">
-        <a href="reservation.html" class="btn primary wide">WEB予約はこちら</a>
-        <a href="about.html" class="btn ghost wide">M&amp;Kについて詳しく見る</a>
+    </section>
+
+    <!-- メニュー -->
+    <section id="menu" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Menu</p>
+          <h2>メニュー</h2>
+          <p class="section-note">※メニュー・料金の詳細は各店舗のホットペッパーページをご確認ください。</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Eyebrow｜アイブロウ</h3>
+            <p>ハリウッドブロウリフト、パラレルブロウ、WAXスタイリングなど、骨格に合わせた眉デザイン。</p>
+            <ul class="list">
+              <li>ハリウッドブロウリフト（レディース眉 癖改善＋WAX脱毛）</li>
+              <li>パラレルブロウ（メンズ眉 癖改善+WAX脱毛）</li>
+              <li>アイブロウスタイリング（WAX脱毛のみ）</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Lash｜まつ毛</h3>
+            <p>パリジェンヌラッシュリフト、ラッシュリフトなど、お目元に合わせたデザインをご提案。</p>
+            <ul class="list">
+              <li>上まつげパーマ（パリジェンヌ変更可）</li>
+              <li>下まつげパーマ</li>
+              <li>まつ毛＆眉毛のセットメニュー</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Hair Removal｜脱毛</h3>
+            <p>SHR蓄熱式脱毛で全身〜部分まで。メンズ脱毛・ヒゲ脱毛も人気です。</p>
+            <ul class="list">
+              <li>全身脱毛コース（顔・VIO込／無し）</li>
+              <li>ヒゲ脱毛・VIO脱毛・パーツ脱毛</li>
+              <li>鼻毛WAX・フェイスWAX　など</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="center mt-lg">
+          <a class="btn ghost" href="https://beauty.hotpepper.jp/kr/slnH000628925/" target="_blank" rel="noopener">佐久店のメニューを見る</a>
+          <a class="btn ghost" href="https://beauty.hotpepper.jp/kr/slnH000709518/" target="_blank" rel="noopener">上田店のメニューを見る</a>
+        </div>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <span class="logo-main">M&amp;K</span>
-      <span class="logo-sub">EYEBROW / LASH / HAIR REMOVAL</span>
-    </div>
-    <div class="footer-links">
-      <a href="privacy.html">プライバシーポリシー（※必要であれば別途作成）</a>
-    </div>
-    <p class="copyright">&copy; M&amp;K All Rights Reserved.</p>
-  </div>
-</footer>
+    <!-- スタッフ紹介（ざっくりテキスト。写真あとで差し替え） -->
+    <section id="staff" class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Staff</p>
+          <h2>スタッフ紹介</h2>
+        </div>
+        <div class="grid two-column">
+          <div>
+            <p class="text-large">眉・まつ毛・脱毛、それぞれに得意分野を持つスタッフが在籍。</p>
+            <p>
+              カウンセリングでは、お顔立ち・ライフスタイル・メイクの好みまで丁寧にヒアリング。<br />
+              「どうしたらいいか分からない」という状態からでも、一緒に似合うデザインを見つけていきます。
+            </p>
+            <p>
+              スタッフ情報・指名予約は、ホットペッパーのスタッフページからご覧いただけます。
+            </p>
+          </div>
+          <div class="staff-photo-placeholder">
+            Staff Photos
+            <span>スタッフ写真をここに配置</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<script>
-  // スマホ用ナビ開閉
-  const navToggle = document.querySelector('.nav-toggle');
-  const header = document.querySelector('.site-header');
-  navToggle.addEventListener('click', () => {
-    header.classList.toggle('nav-open');
-  });
-</script>
+    <!-- 予約 -->
+    <section id="reservation" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Reservation</p>
+          <h2>ご予約</h2>
+        </div>
+
+        <div class="grid two-column reservation-grid">
+          <div class="card">
+            <h3>佐久店</h3>
+            <p>岩村田駅・佐久平駅から車で約6分。駐車場完備でお車でも通いやすいサロンです。</p>
+            <a class="btn primary full" href="https://beauty.hotpepper.jp/kr/slnH000628925/" target="_blank" rel="noopener">
+              佐久店の空席確認・WEB予約
+            </a>
+          </div>
+          <div class="card">
+            <h3>上田店</h3>
+            <p>上田駅お城口から徒歩4分。お仕事帰りやお出かけ前にも立ち寄りやすい立地です。</p>
+            <a class="btn primary full" href="https://beauty.hotpepper.jp/kr/slnH000709518/" target="_blank" rel="noopener">
+              上田店の空席確認・WEB予約
+            </a>
+          </div>
+        </div>
+        <p class="center mt-sm">24時間WEB予約受付中です。お電話・LINEでのご相談もお気軽にどうぞ。</p>
+      </div>
+    </section>
+
+    <!-- モニター募集 -->
+    <section id="monitor" class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Monitor</p>
+          <h2>モニター募集</h2>
+        </div>
+        <div class="grid two-column">
+          <div>
+            <p class="text-large">新メニューやJr.スタッフの技術習得のため、期間限定でモニター様を募集することがあります。</p>
+            <p>
+              条件や募集状況はその都度変わります。<br />
+              最新情報は、ホットペッパークーポン・公式LINE・各種SNSでお知らせしています。
+            </p>
+          </div>
+          <div class="card card-soft">
+            <p>「モニター情報を知りたい」とお伝えいただければ、<br />募集がある際にご案内いたします。</p>
+            <!-- 後でLINEやInstagramのリンクボタンを追加してOK -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 求人 -->
+    <section id="recruit" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Recruit</p>
+          <h2>求人情報</h2>
+        </div>
+        <div class="grid two-column">
+          <div>
+            <p class="text-large">M&amp;Kでは、一緒にサロンをつくってくれるアイブロウ・アイラッシュ・脱毛スタッフを募集しています。</p>
+            <p>
+              眉・まつ毛・脱毛の技術だけでなく、<br />
+              「昨日よりもっと、今日の自分を好きになる」というコンセプトに共感してくださる方を歓迎します。
+            </p>
+            <p>雇用条件・募集状況は随時変更となります。最新情報はお問い合わせください。</p>
+          </div>
+          <div class="card card-soft">
+            <p class="mb-xs">求人のお問い合わせはこちらから：</p>
+            <ul class="list">
+              <li>公式LINE</li>
+              <li>Instagram DM</li>
+              <li>メール　など</li>
+            </ul>
+            <p class="small">※実際の問い合わせ先は、決まり次第このスペースに追記してください。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- アクセス -->
+    <section id="access" class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Access</p>
+          <h2>アクセス</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>佐久店</h3>
+            <p class="access-name">M&amp;K 佐久店</p>
+            <dl class="access-list">
+              <dt>住所</dt>
+              <dd>長野県佐久市岩村田2329-1</dd>
+              <dt>アクセス</dt>
+              <dd>佐久平駅／岩村田駅から車で約6分・駐車場完備</dd>
+            </dl>
+            <a class="btn ghost full" href="https://beauty.hotpepper.jp/kr/slnH000628925/" target="_blank" rel="noopener">
+              佐久店の詳細を見る
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>上田店</h3>
+            <p class="access-name">M&amp;K 上田店</p>
+            <dl class="access-list">
+              <dt>住所</dt>
+              <dd>長野県上田市天神1-3-23 天神テナント101</dd>
+              <dt>アクセス</dt>
+              <dd>上田駅お城口より徒歩4分・駐車場完備</dd>
+            </dl>
+            <a class="btn ghost full" href="https://beauty.hotpepper.jp/kr/slnH000709518/" target="_blank" rel="noopener">
+              上田店の詳細を見る
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">M&amp;K</p>
+      <p class="footer-copy">© M&amp;K All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // スマホ用ナビ開閉
+    const navToggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector(".nav");
+    navToggle.addEventListener("click", () => {
+      nav.classList.toggle("is-open");
+      navToggle.classList.toggle("is-open");
+    });
+    // メニュークリックで閉じる（スマホ）
+    document.querySelectorAll(".nav a").forEach((link) => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("is-open");
+        navToggle.classList.remove("is-open");
+      });
+    });
+  </script>
 </body>
 </html>
